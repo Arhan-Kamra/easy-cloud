@@ -1,0 +1,109 @@
+.contact-form-container {
+  background-image: url("../images/contact-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px;
+
+  .contact-form {
+    max-width: 830px;
+
+    background-color: #f8f9f9;
+    border-radius: 5px;
+    padding: 54px 74px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 16px;
+
+      h3 {
+        font-family: Futuramedium;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 43px;
+        letter-spacing: 0em;
+        color: rgba(57, 55, 77, 1);
+        text-align: center;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+
+      p {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+
+        color: rgba(93, 94, 108, 1);
+        text-align: center;
+      }
+    }
+
+    form {
+      display: flex;
+      width: 100%;
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      flex-wrap: wrap;
+      gap: 12px;
+      input {
+        padding: 16px;
+        max-width: 158px;
+
+        background: rgba(248, 249, 249, 1);
+        border: 0.5px solid #39374d;
+        border-radius: 3px;
+
+        @media only screen and (max-width: 768px) {
+          max-width: unset;
+          width: 100%;
+        }
+
+        &::placeholder {
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: 0px;
+          color: #000;
+        }
+      }
+
+      button[type="submit"] {
+        padding: 12px 32px;
+        background-color: rgba(31, 133, 234, 1);
+        color: #fff;
+        font-family: Futuramedium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        border: none;
+        border-radius: 3px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

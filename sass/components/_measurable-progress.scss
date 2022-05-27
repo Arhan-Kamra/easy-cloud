@@ -1,0 +1,47 @@
+.measurable-progress {
+  display: none;
+  //   @media only screen and (max-width: 575.98px) {
+  //     grid-area: 6 / 1 / 7 / -1 !important;
+  //   }
+  h2 {
+    font-family: Futuralight;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 69px;
+    letter-spacing: 0em;
+    margin-bottom: 55px;
+
+    @media only screen and (max-width: 767.98px) {
+      font-size: 24px !important;
+      line-height: 28px !important;
+    }
+
+    @media only screen and (max-width: 575.98px) {
+      padding-left: 24px;
+      padding-right: 24px;
+      text-align: center;
+    }
+
+    span.futurabold {
+      font-family: futuramedium;
+    }
+  }
+
+  @media only screen and (max-width: 767.98px) {
+    & > div > div {
+      & > h3 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        // min-height: unset;
+      }
+      & > p {
+        font-size: 12px !important;
+        line-height: 16px !important;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

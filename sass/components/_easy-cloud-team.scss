@@ -1,0 +1,82 @@
+.easy-cloud-team {
+  h2 {
+    font-family: Futuralight;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    margin-bottom: 56px;
+
+    span.futurabold {
+      font-family: futuramedium;
+      display: block;
+    }
+  }
+  .members {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .member {
+      //   flex-grow: 1;
+      flex-basis: 200px;
+
+      div.img {
+        img {
+          width: 100%;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .member-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .social-links {
+          display: flex;
+          gap: 20px;
+
+          .twitter,
+          .linkedin {
+            fill: #9ca3af;
+          }
+
+          svg:hover .twitter,
+          svg:hover .linkedin {
+            fill: #158fea;
+          }
+        }
+      }
+
+      .n-and-p {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        > p:nth-of-type(1) {
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-transform: capitalize;
+        }
+
+        > p:nth-of-type(2) {
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.efficient {
+  display: grid;
+  grid-template-columns: 150px repeat(12, 1fr) 150px;
+  @media only screen and (max-width: 991.98px) {
+    grid-template-columns: 80px repeat(12, 1fr) 80px;
+  }
+
+  @media only screen and (max-width: 575.98px) {
+    grid-template-columns: 24px repeat(12, 1fr) 24px;
+  }
+  grid-template-rows: min-content;
+  column-gap: 20px;
+  row-gap: 100px;
+  grid-auto-flow: rows;
+  grid-auto-rows: min-content;
+
+  padding-top: 37px;
+  margin-top: -100px;
+  //   background-color: rgba(27, 204, 170, 0.18);
+  background-image: url("../images/efficient-image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .efficient-container {
+    grid-area: 1 / 2 / 2 / -2;
+
+    @media only screen and (max-width: 768px) {
+      grid-area: 1 / 1 / 2 / -1;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    h2 {
+      font-family: futuralight;
+      font-size: 44px;
+      line-height: 48px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 46px;
+
+      @media only screen and (max-width: 991.98px) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      span.futurabold {
+        font-family: futuramedium;
+      }
+    }
+
+    .efficient-content {
+      //   background-image: url("../images/efficient-image.png");
+      @media only screen and (max-width: 991.98px) {
+        background-image: none;
+      }
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(8, minmax(60px, min-content)) 40px;
+      @media only screen and (max-width: 991.98px) {
+        grid-template-rows: repeat(8, minmax(60px, min-content)) 40px;
+      }
+      grid-gap: 12px;
+      grid-auto-rows: minmax(60px, min-content);
+
+      > p {
+        display: flex;
+        align-items: flex-start;
+        gap: 28px;
+        box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.08);
+        padding: 32px;
+
+        font-family: futuramedium;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+        background-color: #fff;
+        border-radius: 10px;
+
+        &:nth-of-type(1) {
+          grid-area: 1 / 1 / 3 / 5;
+
+          @media only screen and (max-width: 991.98px) {
+            grid-area: 1 / 1 / 3 / -1;
+          }
+        }
+        &:nth-of-type(2) {
+          grid-area: 1 / 8 / 3 / -1;
+
+          @media only screen and (max-width: 991.98px) {
+            grid-area: 3 / 1 / 5 / -1;
+          }
+        }
+        &:nth-of-type(3) {
+          grid-area: 5 / 1 / 7 / 6;
+
+          @media only screen and (max-width: 991.98px) {
+            grid-area: 5 / 1 / 7 / -1;
+          }
+        }
+        &:nth-of-type(4) {
+          grid-area: 6 / 8 / 8 / -1;
+
+          @media only screen and (max-width: 991.98px) {
+            grid-area: 7 / 1 / 9 / -1;
+          }
+        }
+      }
+    }
+  }
+}

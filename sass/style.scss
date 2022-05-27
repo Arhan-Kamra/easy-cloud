@@ -1,0 +1,427 @@
+@import "base/mixins";
+body {
+  width: 100%;
+
+  // overall container layout starts here
+  div.containerr {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 150px repeat(12, 1fr) 150px;
+    // @include respond-to("extra-small") {
+    //   grid-template-columns: 150px repeat(12, 1fr) 150px;
+    // }
+    // @include respond-to("small") {
+    //   grid-template-columns: 150px repeat(12, 20px) 150px;
+    // }
+    // @include respond-to("medium") {
+    //   grid-template-columns: 150px repeat(12, 35px) 150px;
+    // }
+    // @include respond-to("large") {
+    //   grid-template-columns: 150px repeat(12, 33.33px) 150px;
+    // }
+    // @include respond-to("x-large") {
+    //   grid-template-columns: 150px repeat(12, 48.33px) 150px;
+    // }
+    // @include respond-to("xx-large") {
+    //   grid-template-columns: 150px repeat(12, 63.33px) 150px;
+    // }
+
+    grid-template-rows: repeat(21, min-content);
+    column-gap: 20px;
+    row-gap: 100px;
+    grid-auto-flow: rows;
+    grid-auto-rows: min-content;
+
+    @media only screen and (max-width: 991.98px) {
+      grid-template-columns: 80px repeat(12, 1fr) 80px;
+    }
+
+    @media only screen and (max-width: 575.98px) {
+      grid-template-columns: 24px repeat(12, 1fr) 24px;
+    }
+
+    // header layout starts here
+    .header-container {
+      padding-bottom: 80px;
+      background-image: url("../images/hero-banner-image.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      grid-area: 1 / 1 / 2 / -1;
+      display: grid;
+      grid-template-columns: 150px repeat(12, 1fr) 150px;
+      grid-template-rows: min-content;
+      column-gap: 20px;
+      row-gap: 100px;
+      grid-auto-flow: rows;
+      grid-auto-rows: min-content;
+
+      @media only screen and (max-width: 991.98px) {
+        grid-template-columns: 80px repeat(12, 1fr) 80px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        grid-template-columns: 24px repeat(12, 1fr) 24px;
+      }
+
+      .hero-image {
+        grid-area: 2 / 7 / 3 / -1;
+      }
+
+      header {
+        grid-area: 1 / 2 / 2 / -2;
+      }
+
+      .banner {
+        // background-color: rgba(27, 204, 170, 0.18);
+        grid-area: 2 / 2 / 3 / -2;
+
+        @media only screen and (max-width: 576px) {
+          justify-content: center;
+        }
+      }
+    }
+    // header layout ends here
+
+    // efficient layout starts here
+
+    .efficient {
+      grid-area: 2 / 1 / 3 / -1;
+
+      //   background-color: rgba(27, 204, 170, 0.18);
+    }
+    // efficient layout ends here
+
+    // scalable layout starts here
+    .scalable {
+      grid-area: 3 / 2 / 4 / -2;
+
+      @media only screen and (max-width: 991.98px) {
+        margin-top: 0;
+      }
+    }
+    // scalable layout ends here
+
+    // our process layout starts here
+    .our-process {
+      grid-area: 4 / 2 / 5 / -2;
+    }
+    // our process layout ends here
+
+    // cloud based layout starts here
+    .cloud-based {
+      grid-area: 5 / 2 / 6 / -1;
+    }
+    // cloud based layout ends here
+
+    // service layout starts here
+    .service {
+      grid-area: 6 / 2 / 7 / -2;
+    }
+    // service layout ends here
+
+    // business empowerment layout starts here
+    .business-empowerment-container {
+      grid-area: 7 / 1 / 8 / -1;
+
+      display: grid;
+      grid-template-columns: 150px repeat(12, 1fr) 150px;
+      grid-template-rows: min-content;
+      column-gap: 20px;
+      row-gap: 100px;
+      grid-auto-flow: rows;
+      grid-auto-rows: min-content;
+
+      @media only screen and (max-width: 991.98px) {
+        grid-template-columns: 80px repeat(12, 1fr) 80px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        grid-template-columns: 24px repeat(12, 1fr) 24px;
+      }
+    }
+    // business empowerment layout ends here
+
+    // measurable progress layout starts here
+    .measurable-progress {
+      grid-area: 8 / 2 / 9 / -2;
+    }
+    // measurable progress layout ends here
+
+    // all in one layout starts here
+    .all-in-one {
+      grid-area: 9 / 2 / 10 / -2;
+    }
+    // all in one layout ends here
+
+    // business platform layout starts here
+    .business-platform {
+      grid-area: 10 / 2 / 11 / -2;
+    }
+    // business platform layout ends here
+
+    // build business layout starts here
+    .build-business {
+      grid-area: 11 / 2 / 12 / -2;
+    }
+    // build business layout ends here
+
+    // download form layout starts here
+    .download-form-container {
+      grid-area: 12 / 1 / 13 / -1;
+
+      display: grid;
+      grid-template-columns: 150px repeat(12, 1fr) 150px;
+      grid-template-rows: min-content;
+      column-gap: 20px;
+      row-gap: 100px;
+      grid-auto-flow: rows;
+      grid-auto-rows: min-content;
+
+      @media only screen and (max-width: 991.98px) {
+        grid-template-columns: 80px repeat(12, 1fr) 80px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        grid-template-columns: 24px repeat(12, 1fr) 24px;
+      }
+    }
+    // download form layout ends here
+
+    // tab bar layout starts here
+    // .tab-bar {
+    //   grid-area: 14 / 2 / 15 / -2;
+    // }
+
+    .tab-bar-new {
+      grid-area: 13 / 1 / 14 / -1;
+    }
+    // tab bar layout ends here
+
+    // mission critical layout starts here
+    .mission-critical {
+      grid-area: 14 / 2 / 15 / -2;
+    }
+    // mission critical layout ends here
+
+    // data protection layout starts here
+    .data-protection {
+      grid-area: 15 / 2 / 16 / -2;
+    }
+    // data protection team layout ends here
+
+    // testimonials layout starts here
+    .testimonials {
+      grid-area: 16 / 2 / 17 / -2;
+    }
+    // testimonials layout ends here
+
+    // productive easy cloud layout starts here
+    .productive-easy-cloud {
+      grid-area: 17 / 2 / 18 / -2;
+    }
+    // productive easy cloud layout ends here
+
+    // companies layout starts here
+    .companies {
+      grid-area: 18 / 2 / 19 / -2;
+    }
+    // companies layout ends here
+
+    // easy-cloud-team layout starts here
+    .easy-cloud-team {
+      grid-area: 19 / 2 / 20 / -2;
+    }
+    // easy cloud team layout ends here
+
+    // contact form layout starts here
+    .contact-form-container {
+      grid-area: 20 / 1 / 21 / -1;
+    }
+    // contact form layout ends here
+
+    // calendy layout starts here
+    .calendy-container {
+      grid-area: 21 / 1 / 22 / -1;
+
+      display: grid;
+      grid-template-columns: 150px repeat(12, 1fr) 150px;
+      grid-template-rows: min-content;
+      column-gap: 20px;
+      row-gap: 100px;
+      grid-auto-flow: rows;
+      grid-auto-rows: min-content;
+
+      margin-top: -100px;
+
+      @media only screen and (max-width: 991.98px) {
+        grid-template-columns: 80px repeat(12, 1fr) 80px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        grid-template-columns: 24px repeat(12, 1fr) 24px;
+      }
+    }
+    // calendy layout ends here
+
+    // footer layout starts here
+    .footer-container {
+      grid-area: 22 / 1 / 23 / -1;
+
+      display: grid;
+      grid-template-columns: 150px repeat(12, 1fr) 150px;
+      grid-template-rows: min-content;
+      column-gap: 20px;
+      row-gap: 100px;
+      grid-auto-flow: rows;
+      grid-auto-rows: min-content;
+
+      margin-top: -100px;
+
+      @media only screen and (max-width: 991.98px) {
+        grid-template-columns: 80px repeat(12, 1fr) 80px;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        grid-template-columns: 24px repeat(12, 1fr) 24px;
+      }
+    }
+    // footer layout ends here
+  }
+  //   overall container layout ends here
+}
+
+// what is done in responsive
+// scalable done
+// cloud based done
+// all in one done
+// business platform done
+// build business done
+// download form done
+// mission critical done
+// service done
+// companies done
+// easy cloud team done
+// footer done
+
+.measurable-progress {
+  & > div {
+    display: flex;
+    flex-direction: row;
+    padding-top: 240px;
+
+    background-image: url("../images/measurable-progress.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-basis: 33.33%;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      &.mid-div {
+        flex-basis: 30%;
+      }
+
+      &.last-div {
+        padding-left: 14px;
+      }
+
+      h2 {
+        margin-bottom: 0;
+        font-family: Futurabook;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: -0.025em;
+        color: rgba(1, 0, 1, 1);
+      }
+
+      h3 {
+        font-family: Futuramedium;
+        font-size: 22px;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color: rgba(57, 55, 77, 1);
+        // min-height: 102px;
+
+        padding-right: 8px;
+      }
+
+      p {
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: rgba(93, 94, 108, 1);
+
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.measurable-progress {
+  //   display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .productive-easy-cloud .content-container {
+    flex-direction: column !important;
+  }
+
+  .productive-easy-cloud .top-content {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .business-platform > h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  h2 {
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+}
+
+@import "base/reset";
+@import "base/baseStyles";
+@import "base/typography";
+@import "base/colors";
+
+@import "./components/header";
+@import "./components/efficient";
+@import "./components/scalable";
+@import "./components/cloud-based";
+@import "./components/measurable-progress";
+@import "./components/all-in-one";
+@import "./components/business-platform";
+@import "./components/build-business";
+@import "./components/download-form";
+@import "./components/companies";
+@import "./components/tab-bar-new";
+@import "./components/mission-critical";
+@import "./components/service";
+@import "./components/easy-cloud-team";
+@import "./components/contact-form";
+@import "./components/footer";
+@import "./components/calendy";
+@import "./components/data-protection";
+@import "./components/testimonials";
+@import "./components/tab-bar";
+@import "./components/productive-easy-cloud";
+@import "./components/business-empowerment";
+@import "./components/our-process";
+@import "layout/layout";
+
+@import "responsive/responsive";

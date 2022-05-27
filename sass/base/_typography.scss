@@ -1,0 +1,98 @@
+// Typography styles
+@mixin h1 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@mixin h3 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+}
+
+@mixin h5 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+@mixin h6 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@mixin h4 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+
+@mixin body1 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+@mixin body2 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+@mixin body3 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+@mixin body4 {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@mixin h2Bold {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}
+
+@mixin h2Medium {
+  font-family: "Futura";
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}

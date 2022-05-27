@@ -1,0 +1,94 @@
+.download-form-container {
+  display: none !important;
+  background-color: #0e5295;
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 50%;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
+  .download-form {
+    grid-area: 1 / 2 / 2 / -2;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    @media only screen and (max-width: 767.98px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      color: #fff;
+
+      @media only screen and (max-width: 767.98px) {
+        text-align: center;
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      @media only screen and (max-width: 991.98px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      input {
+        border: none;
+        border-radius: 3px;
+        padding: 10px 24px 10px 24px;
+
+        &::placeholder {
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+          letter-spacing: 0em;
+        }
+      }
+
+      button[type="submit"] {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        padding: 10px 24px 10px 24px;
+        background-color: #1f85ea;
+
+        font-family: Futuramedium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        color: #fafafa;
+        text-transform: initial;
+        cursor: pointer;
+
+        transition: all 150ms ease-in 0ms;
+
+        &:hover {
+          background-color: #fff;
+          border: 1px solid #fff;
+          color: rgba(31, 133, 234, 1);
+        }
+      }
+    }
+  }
+}

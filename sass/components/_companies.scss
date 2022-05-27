@@ -1,0 +1,12 @@
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc((100% - 90%) / 6);
+  div {
+    flex-basis: 15%;
+    min-width: 100px;
+    img {
+      width: 100%;
+    }
+  }
+}

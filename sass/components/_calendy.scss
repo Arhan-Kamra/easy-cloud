@@ -1,0 +1,10 @@
+.calendy-container {
+  background-color: #fbfcfd;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .calendy {
+    grid-area: 1 / 2 / 2 / -2;
+    overflow: hidden;
+  }
+}

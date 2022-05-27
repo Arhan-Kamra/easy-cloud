@@ -1,0 +1,45 @@
+.tab-bar-new {
+  background-color: rgba(14, 82, 149, 1);
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  p {
+    max-width: 775px;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  button {
+    display: block;
+
+    font-family: "Futuramedium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    padding: 11px 32px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 150ms ease-in 0ms;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}

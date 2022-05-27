@@ -1,0 +1,120 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & > h3:nth-child(1) {
+    font-family: Futuramedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: $green;
+  }
+
+  & > h2:nth-of-type(1) {
+    font-family: Futuralight;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    margin-bottom: 76px;
+
+    span.futurabold {
+      font-family: futuramedium;
+      display: block;
+    }
+  }
+  .owl-carousel {
+    .owl-dots {
+      display: none !important;
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: -200px;
+      right: 0;
+
+      button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 4px 4px 18px 0px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+          background-color: rgba(14, 82, 149, 1);
+          color: #fff;
+        }
+      }
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      background-color: rgba(248, 249, 249, 1);
+      border-radius: 8px;
+      padding: 41px 29px;
+      height: 500px;
+
+      > h3 {
+        font-family: Futuralight;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: capitalize;
+
+        span.futurabold {
+          font-family: futuramedium;
+        }
+      }
+
+      .double-quote {
+        width: 63px;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        // gap: 80px;
+        flex-grow: 1;
+        margin-top: auto;
+
+        p {
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0em;
+        }
+
+        .person-info {
+          display: flex;
+          gap: 24px;
+          align-items: center;
+          margin-top: auto;
+
+          div:nth-of-type(2) {
+            img {
+              width: 96px;
+              height: 14px;
+            }
+            p {
+              font-family: Futuramedium;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 29px;
+              letter-spacing: 0em;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+}

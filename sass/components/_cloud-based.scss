@@ -1,0 +1,82 @@
+.cloud-based {
+  margin-top: -100px;
+
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  @media only screen and (max-width: 991.98px) {
+    flex-direction: column;
+    gap: 44px;
+    align-items: stretch;
+  }
+
+  .cloud-based-content {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+
+    p:nth-of-type(1) {
+      font-family: Futuramedium;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      color: #1bccaa;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: Futuralight;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+      letter-spacing: 0em;
+
+      span.futurabold {
+        font-family: futuramedium;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 29px;
+      li {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        font-family: "open sans";
+
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        img {
+        }
+      }
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0em;
+      color: #5d5e6c;
+    }
+  }
+
+  .cloud-based-image {
+    flex-basis: 60%;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+      order: -1;
+    }
+  }
+}

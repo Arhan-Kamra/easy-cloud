@@ -1,0 +1,73 @@
+.business-platform {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  h2 {
+    font-family: Futuralight;
+    font-size: 52px;
+    line-height: 69px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: capitalize;
+
+    span.futurabold {
+      font-family: futuramedium;
+    }
+  }
+
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 991.98px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 80px;
+    }
+
+    > div {
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #f8f9f9;
+      border-radius: 15px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 24px;
+
+      @media only screen and (max-width: 991.98px) {
+        flex-basis: 100%;
+      }
+
+      h3 {
+        font-family: Futuramedium;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-transform: capitalize;
+      }
+
+      img {
+        position: relative;
+        top: -30px;
+      }
+
+      p {
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        color: #5d5e6c;
+      }
+    }
+  }
+}
